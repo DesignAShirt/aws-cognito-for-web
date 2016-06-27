@@ -1,0 +1,40 @@
+{
+  "name": "authentication-client",
+  "description": "",
+  "version": "1.0.0",
+  "main": "src/authentication.js",
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "test": "mocha test"
+  },
+  "author": "Cory Mawhorter <cory.mawhorter@gmail.com> (http://www.mawhorter.net)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DesignAShirt/aws-cognito-for-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DesignAShirt/aws-cognito-for-web/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "async": "^1.5.2",
+    "aws-sdk": "^2.2.13",
+    "browserify": "^12.0.1",
+    "browserify-shim": "^3.8.11",
+    "dotenv": "^2.0.0",
+    "install": "^0.4.4",
+    "mocha": "*",
+    "mock-localstorage": "^0.1.3",
+    "npm": "^3.7.3",
+    "request": "^2.69.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "AWS": "global:AWS"
+  }
+}
