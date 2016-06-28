@@ -16,11 +16,11 @@ Prerequisties: AWS account, auth0 account; rudimentary knowledge of both
 1. (Optional) Edit the generated Cognito auth identity and add the ability to put objects to an S3 bucket
 
 
-### Setting up aws-cognito-for-web (AuthenticationClient)
+### Setting up authentication-client
 
 Set up a browserfied project.  (Details on how to do that are outside scope here.)
 
-`npm install auth0-lock aws-cognito-for-web --save`
+`npm install auth0-lock authentication-client --save`
 
 
 ```js
